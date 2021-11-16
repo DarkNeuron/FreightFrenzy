@@ -9,18 +9,24 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class HardwareConfig {
 
-    DcMotor mFrontRight;
-    DcMotor mBackRight;
-    DcMotor mFrontLeft;
-    DcMotor mBackLeft;
-    DcMotor markerMotor;
-    DcMotor armTop;
-    DcMotor armBot;
-    DcMotor liftMotor;
+    private DcMotor mFrontRight;
+    private DcMotor mBackRight;
+    private DcMotor mFrontLeft;
+    private DcMotor mBackLeft;
+
+    private Servo carousel;
+    private DcMotor arm;
 
 
 
-    Servo intakeServo;
+//    DcMotor markerMotor;
+//    DcMotor armTop;
+//    DcMotor armBot;
+//    DcMotor liftMotor;
+
+
+
+    //Servo intakeServo;
 
 
 

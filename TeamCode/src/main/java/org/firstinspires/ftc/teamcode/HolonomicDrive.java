@@ -33,8 +33,14 @@ public class HolonomicDrive extends LinearOpMode {
 
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
-    private DcMotor leftDrive = null;
-    private DcMotor rightDrive = null;
+//    private DcMotor leftDrive = null;
+//    private DcMotor rightDrive = null;
+
+    public Servo carousel = null;
+    public DcMotor frontLeftDrive = null;
+    public DcMotor frontRightDrive = null;
+    public DcMotor backLeftDrive = null;
+    public DcMotor backRightDrive = null;
 
     @Override
     public void runOpMode() {
