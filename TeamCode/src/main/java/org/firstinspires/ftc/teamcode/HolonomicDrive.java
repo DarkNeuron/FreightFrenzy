@@ -37,6 +37,7 @@ public class HolonomicDrive extends LinearOpMode {
 //    private DcMotor rightDrive = null;
 
     public Servo carousel = null;
+    public DcMotor claw = null;
     public DcMotor frontLeftDrive = null;
     public DcMotor frontRightDrive = null;
     public DcMotor backLeftDrive = null;
@@ -50,8 +51,14 @@ public class HolonomicDrive extends LinearOpMode {
         // Initialize the hardware variables. Note that the strings used here as parameters
         // to 'get' must correspond to the names assigned during the robot configuration
         // step (using the FTC Robot Controller app on the phone).
-        leftDrive  = hardwareMap.get(DcMotor.class, "left_drive");
-        rightDrive = hardwareMap.get(DcMotor.class, "right_drive");
+        frontLeftDrive  = hardwareMap.get(DcMotor.class, "front_left_drive");
+        frontRightDrive = hardwareMap.get(DcMotor.class, "front_right_drive");
+        backLeftDrive = hardwareMap.get(DcMotor.class, "back_left_drive");
+        backRightDrive = hardwareMap.get(DcMotor.class, "back_right_drive");
+
+        claw = hardwareMap.get(DcMotor.class, "claw");
+
+        carousel = hardwareMap.get(Servo.class, "carousel");
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
